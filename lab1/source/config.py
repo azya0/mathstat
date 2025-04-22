@@ -1,0 +1,1 @@
+PATH: str = "../data"
