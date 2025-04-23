@@ -110,7 +110,7 @@ def main():
     result: dict[str, dict[int, ProcessStatsReturn]] = {}
 
     for name, function in generate_dict.items():
-        for size in [10, 50, 1000]:
+        for size in [10, 100, 1000]:
             another_dict: dict[int, ProcessStatsReturn]
             
             if (another_dict := result.get(name)) is None:
