@@ -8,7 +8,7 @@ from process_data import main as process_data
 def main():
     data: dict[str, dict[str, DataFrame]] = get_data()
 
-    process_data(data)
+    process_data()
     create_graph(data)
 
 

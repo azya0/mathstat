@@ -24,7 +24,7 @@ def generate_uniform_samples(size: int):
     return np.random.uniform(low=lower_bound, high=upper_bound, size=size)
 
 
-generate_dict: dict[str, Callable[[int], None]] = {
+generate_dict: dict[str, Callable[[int], np.ndarray]] = {
     "normal_distribution": generate_normal_samples,
     "Cauchy_distribution": generate_cauchy_samples,
     "Poisson_distribution": generate_poisson_samples,
